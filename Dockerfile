@@ -11,6 +11,7 @@ ENV CATALINA_OPTS="-Xmx2048m -server"
 RUN wget ${OPENAM_DOWNLOAD_URL} && \
     unzip -d unpacked *.zip && \
     mv unpacked/openam/OpenAM*.war $CATALINA_HOME/webapps/openam.war && \
+    unzip unpacked/openam/SSOAdminTools-${OPENAM_VERSION}.zip -d /root/ssoadmintools && \
     rm -rf *.zip unpacked
 
 RUN openssl req -new -newkey rsa:2048 -nodes -out /opt/server.csr -keyout /opt/server.key -subj "/C=GB/ST=Essex/L=Southend/O=Nick Pack/OU=Technology/CN=openam.test.com" \
