@@ -1,6 +1,6 @@
 FROM tomcat:8-jre8
 
-MAINTAINER Fábio Matos <fabiomatos@gmail.com>
+MAINTAINER Nick Pack <nick@nickpack.com>
 
 ARG OPENAM_VERSION=13.0.0
 ARG OPENAM_KEYSTORE_PASSWORD=changeit
