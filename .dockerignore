@@ -3,3 +3,6 @@
 
 # except
 !server.xml
+!*.keystore
+!cacerts
+!*.jks
