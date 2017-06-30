@@ -8,10 +8,10 @@
             <Value></Value>
         </Attribute>
         <Attribute name="signingCertAlias">
-            <Value></Value>
+            <Value>sso_ts</Value>
         </Attribute>
         <Attribute name="encryptionCertAlias">
-            <Value></Value>
+            <Value>sso_te</Value>
         </Attribute>
         <Attribute name="basicAuthOn">
             <Value>false</Value>
@@ -23,10 +23,10 @@
             <Value></Value>
         </Attribute>
         <Attribute name="autofedEnabled">
-            <Value>false</Value>
+            <Value>true</Value>
         </Attribute>
         <Attribute name="autofedAttribute">
-            <Value></Value>
+            <Value>uid</Value>
         </Attribute>
         <Attribute name="transientUser">
             <Value></Value>
@@ -41,7 +41,7 @@
             <Value>com.sun.identity.saml2.plugins.DefaultSPAccountMapper</Value>
         </Attribute>
         <Attribute name="useNameIDAsSPUserID">
-            <Value>false</Value>
+            <Value>true</Value>
         </Attribute>
         <Attribute name="spAttributeMapper">
             <Value>com.sun.identity.saml2.plugins.DefaultSPAttributeMapper</Value>
@@ -59,6 +59,7 @@
            <Value>exact</Value>
         </Attribute>
         <Attribute name="attributeMap">
+          <Value>UPN=uid</Value>
         </Attribute>
         <Attribute name="saml2AuthModuleName">
            <Value></Value>

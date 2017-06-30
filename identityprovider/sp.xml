@@ -2,8 +2,8 @@
     xmlns="urn:oasis:names:tc:SAML:2.0:metadata"
     entityID="https://openam.test.com:8443/openam">
     <SPSSODescriptor
-        AuthnRequestsSigned="false"
-        WantAssertionsSigned="false"
+        AuthnRequestsSigned="true"
+        WantAssertionsSigned="true"
         protocolSupportEnumeration=
             "urn:oasis:names:tc:SAML:2.0:protocol">
         <SingleLogoutService
