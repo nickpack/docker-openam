@@ -92,7 +92,8 @@
                    clientAuth="false" sslProtocol="TLS"
                    maxHttpHeaderSize="102400"
                    keystoreFile="/opt/server.keystore"
-                   keystorePass="KEYSTORE_PASSWORD_PLACEHOLDER" />
+                   keystorePass="KEYSTORE_PASSWORD_PLACEHOLDER"
+                   sslImplementationName="org.apache.tomcat.util.net.jsse.JSSEImplementation" />
         <!-- CHANGES END HERE -->
 
         <!-- Define an AJP 1.3 Connector on port 8009 -->
