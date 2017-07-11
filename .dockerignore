@@ -3,3 +3,4 @@
 
 # except
 !server.xml
+!*.zip
